@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#0E0E0E" />
+    <meta name="template-color" content="#0E0E0E" />
+    <link rel="manifest" href="manifest.json" crossorigin />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="description" content="Index page" />
+    <meta name="keywords" content="index, page" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpeg" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Dashboard | Dream Deal Group</title>
+</head>
+
+<body>
+    <!-- loader -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center"><img src="assets/img/loading.gif" alt="Dream Deal Group" /></div>
+            </div>
+        </div>
+    </div>
+    <header class="header sticky-bar">
+        <div class="container">
+            <div class="main-header">
+                <div class="header-left">
+                    <div class="header-logo">
+                        <a class="d-flex" href="dashboard.html">
+                            <img alt="Dream Deal Group" class="dreamdeal-logo" src="assets/img/logo.jpg" />
+                            <img alt="Dream Deal Group" class="dreamdeal-logo-mob" src="assets/img/mob-logo.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <nav class="nav-main-menu">
+                        <ul class="main-menu">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a class="active" href="schemes.html">My Plans</a></li>
+                            <li><a href="payment-details.html">Payment Details</a></li>
+                            <li><a href="winners.html">Winners</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span
+                            class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+                </div>
+                <div class="header-right">
+                    <div class="member-login">
+                        <img alt="" src="assets/img/user.png" />
+                        <div class="info-member">
+                            <strong class="color-brand-1">Shammas Sha</strong>
+                            <div class="dropdown">
+                                <a class="font-xs color-text-paragraph-2 icon-down" id="dropdownProfile" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">User ID :
+                                    12345</a>
+                                <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end"
+                                    aria-labelledby="dropdownProfile">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="reset-password.html">Reset Password</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-content-area">
+                <div class="perfect-scroll">
+                    <div class="mobile-menu-wrap mobile-header-border">
+                        <!-- mobile menu start-->
+                        <nav>
+                            <ul class="mobile-menu font-heading">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="schemes.html">My Plans</a></li>
+                                <li><a href="payment-details.html">Payment Details</a></li>
+                                <li><a href="winners.html">Winners</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-account">
+                        <h6 class="mb-10">Your Account</h6>
+                        <ul class="mobile-menu font-heading">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="profile.html">Account Settings</a></li>
+                            <li><a href="login.html">Logout Out</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-copyright">Copyright 2024 &copy; Dream Deal Group.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="section-box-2">
+            <div class="container">
+                <div class="banner-hero banner-image-single"><img src="assets/img/img.png" alt="Dream Deal Group" />
+                </div>
+                <div class="box-company-profile">
+                    <div class="image-compay"><img src="assets/img/user.png" alt="Dream Deal Group"
+                            style="width: 85px;" /></div>
+                    <div class="row mt-10">
+                        <div class="col-lg-8 col-md-12">
+                            <h5 class="f-18">Steven schemes <span
+                                    class="card-location font-regular ml-20">location</span></h5>
+                            <p class="mt-0 font-md color-text-paragraph-2 mb-15">User ID: 1234567890</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-lg-end">
+                            <a class="btn btn-apply btn-apply-big" href="page-contact.html">Sign Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom pt-10 pb-10"></div>
+            </div>
+        </section>
+        <section class="section-box mt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="box-nav-tabs nav-tavs-profile mb-5">
+                            <ul class="nav" role="tablist">
+                                <li><a class="btn btn-border aboutus-icon mb-20 active" href="#tab-my-profile"
+                                        data-bs-toggle="tab" role="tab" aria-controls="tab-my-profile"
+                                        aria-selected="true">My Profile</a></li>
+                                <li><a class="btn btn-border recruitment-icon mb-20" href="#tab-my-schemes"
+                                        data-bs-toggle="tab" role="tab" aria-controls="tab-my-schemes"
+                                        aria-selected="false">My Plans</a></li>
+                                <li><a class="btn btn-border people-icon mb-20" href="#tab-saved-schemes"
+                                        data-bs-toggle="tab" role="tab" aria-controls="tab-saved-schemes"
+                                        aria-selected="false">My Promotors</a></li>
+                                <li><a class="btn btn-border people-icon mb-20" href="#tab-change-pswd"
+                                        data-bs-toggle="tab" role="tab" aria-controls="tab-change-pswd"
+                                        aria-selected="false">Change Password</a></li>
+                                <li><a class="btn btn-border people-icon mb-20" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 col-12 mb-50">
+                        <div class="content-single">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tab-my-profile" role="tabpanel"
+                                    aria-labelledby="tab-my-profile">
+                                    <h6 class="color-orange mb-20 text-25">My Account</h6>
+                                    <a class="font-md color-text-paragraph-2" href="#">Update your profile</a>
+                                    <div class="mt-35 mb-40 box-info-profie">
+                                        <div class="image-profile"><img src="assets/img/user.png"
+                                                alt="Dream Deal Group" /></div>
+                                        <a class="btn btn-apply">Upload Avatar</a><a class="btn btn-link">Delete</a>
+                                    </div>
+                                    <div class="row form-contact">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Full Name *</label>
+                                                <input class="form-control" type="text" value="Steven Job" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Email *</label>
+                                                <input class="form-control" type="text" value="stevenjob@gmail.com" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Contact number</label>
+                                                <input class="form-control" type="text" value="01 - 234 567 89" />
+                                            </div>
+                                            <div class="border-bottom pt-10 pb-10 mb-30"></div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Address</label>
+                                                <input class="form-control" type="text" value="Steven Job" />
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="font-sm color-text-mutted mb-10">City</label>
+                                                        <input class="form-control" type="text" value="Mcallen" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="font-sm color-text-mutted mb-10">Zip code</label>
+                                                        <input class="form-control" type="text" value="82356" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="font-sm color-text-mutted mb-10">State</label>
+                                                        <input class="form-control" type="text" value="New York" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="font-sm color-text-mutted mb-10">Country</label>
+                                                        <input class="form-control" type="text" value="United States" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom pt-10 pb-10 mb-30"></div>
+                                            <div class="box-button mt-15">
+                                                <button class="btn btn-apply-big font-md font-bold">Save All
+                                                    Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-my-schemes" role="tabpanel"
+                                    aria-labelledby="tab-my-schemes">
+                                    <h6 class="color-orange mb-20 text-25">Joined Schemes</h6>
+                                    <div class="row display-list">
+                                        <div class="col-xl-12 col-12">
+                                            <div class="card-grid-2 hover-up"><span class="flash"></span>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="card-grid-2-image-left pb-0">
+                                                            <div class="image-box"><img src="assets/img/scheme-ico.jpg" alt="jobBox"></div>
+                                                            <div class="right-info">
+                                                                <a class="name-job">Investment Plan Name</a>
+                                                                <span class="location-small mr-10">prometor name here</span>
+                                                                <span class="card-briefcase">Joined by 10 Dec 2023</span>
+                                                                <span class="card-wallet text-success">Payment Done</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block-info pb-15">
+                                                    <div class="mt-5"></div>
+                                                    <p class="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit
+                                                        amet, consectetur adipisicing elit.
+                                                        Recusandae architecto eveniet, dolor quo repellendus pariatur
+                                                    </p>
+                                                    <div class="card-2-bottom mt-20">
+                                                        <div class="row">
+                                                            <div class="col-lg-7 col-7">
+                                                                <span class="card-text-price">₹765</span>
+                                                                <span class="text-muted">/Month</span>
+                                                            </div>
+                                                            <div class="col-lg-5 col-5 text-end">
+                                                                <a class="btn btn-apply-now" href="schemes-details.html">view more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-12">
+                                            <div class="card-grid-2 hover-up"><span class="flash"></span>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="card-grid-2-image-left pb-0">
+                                                            <div class="image-box"><img src="assets/img/scheme-ico.jpg" alt="jobBox"></div>
+                                                            <div class="right-info">
+                                                                <a class="name-job">Investment Plan Name</a>
+                                                                <span class="location-small mr-10">prometor name here</span>
+                                                                <span class="card-briefcase">Joined by 10 Dec 2023</span>
+                                                                <span class="card-wallet text-success">Payment Done</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block-info pb-15">
+                                                    <div class="mt-5"></div>
+                                                    <p class="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit
+                                                        amet, consectetur adipisicing elit.
+                                                        Recusandae architecto eveniet, dolor quo repellendus pariatur
+                                                    </p>
+                                                    <div class="card-2-bottom mt-20">
+                                                        <div class="row">
+                                                            <div class="col-lg-7 col-7">
+                                                                <span class="card-text-price">₹765</span>
+                                                                <span class="text-muted">/Month</span>
+                                                            </div>
+                                                            <div class="col-lg-5 col-5 text-end">
+                                                                <a class="btn btn-apply-now" href="schemes-details.html">view more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-12">
+                                            <div class="card-grid-2 hover-up"><span class="flash"></span>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="card-grid-2-image-left pb-0">
+                                                            <div class="image-box"><img src="assets/img/scheme-ico.jpg" alt="jobBox"></div>
+                                                            <div class="right-info">
+                                                                <a class="name-job">Investment Plan Name</a>
+                                                                <span class="location-small mr-10">prometor name here</span>
+                                                                <span class="card-briefcase">Joined by 10 Dec 2023</span>
+                                                                <span class="card-wallet text-success">Payment Done</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block-info pb-15">
+                                                    <div class="mt-5"></div>
+                                                    <p class="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit
+                                                        amet, consectetur adipisicing elit.
+                                                        Recusandae architecto eveniet, dolor quo repellendus pariatur
+                                                    </p>
+                                                    <div class="card-2-bottom mt-20">
+                                                        <div class="row">
+                                                            <div class="col-lg-7 col-7">
+                                                                <span class="card-text-price">₹765</span>
+                                                                <span class="text-muted">/Month</span>
+                                                            </div>
+                                                            <div class="col-lg-5 col-5 text-end">
+                                                                <a class="btn btn-apply-now" href="schemes-details.html">view more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-saved-schemes" role="tabpanel"
+                                    aria-labelledby="tab-saved-schemes">
+                                    <h6 class="color-orange mb-20 text-25">Connected Promotors</h6>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="card-grid-2 hover-up">
+                                                <div class="card-grid-2-image-left promoter">
+                                                    <div class="card-grid-2-image-rd online">
+                                                        <figure><img alt="jobBox" src="assets/img/user.png"></figure>
+                                                    </div>
+                                                    <div class="card-profile pt-10">
+                                                            <h5>Robert Fox</h5>
+                                                            <span class="font-xs color-text-mutted">Location</span><br/>
+                                                            <span class="font-xs color-text-mutted">Mob Number</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="card-grid-2 hover-up">
+                                                <div class="card-grid-2-image-left promoter">
+                                                    <div class="card-grid-2-image-rd online">
+                                                        <figure><img alt="jobBox" src="assets/img/user.png"></figure>
+                                                    </div>
+                                                    <div class="card-profile pt-10">
+                                                        <h5>Robert Fox</h5>
+                                                        <span class="font-xs color-text-mutted">Location</span><br />
+                                                        <span class="font-xs color-text-mutted">Mob Number</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="card-grid-2 hover-up">
+                                                <div class="card-grid-2-image-left promoter">
+                                                    <div class="card-grid-2-image-rd online">
+                                                        <figure><img alt="jobBox" src="assets/img/user.png"></figure>
+                                                    </div>
+                                                    <div class="card-profile pt-10">
+                                                        <h5>Robert Fox</h5>
+                                                        <span class="font-xs color-text-mutted">Location</span><br />
+                                                        <span class="font-xs color-text-mutted">Mob Number</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="card-grid-2 hover-up">
+                                                <div class="card-grid-2-image-left promoter">
+                                                    <div class="card-grid-2-image-rd online">
+                                                        <figure><img alt="jobBox" src="assets/img/user.png"></figure>
+                                                    </div>
+                                                    <div class="card-profile pt-10">
+                                                        <h5>Robert Fox</h5>
+                                                        <span class="font-xs color-text-mutted">Location</span><br />
+                                                        <span class="font-xs color-text-mutted">Mob Number</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-change-pswd" role="tabpanel"
+                                    aria-labelledby="tab-change-pswd">
+                                    <h6 class="color-orange mb-20 text-25">Change your password</h6>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Old Password</label>
+                                                <input class="form-control" type="password" value="123456789" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">New Password</label>
+                                                <input class="form-control" type="password" value="123456789" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="font-sm color-text-mutted mb-10">Confirm-Password
+                                                    *</label>
+                                                <input class="form-control" type="password" value="123456789" />
+                                            </div>
+                                            <div class="border-bottom pt-10 pb-10"></div>
+                                            <div class="box-button mt-15">
+                                                <button class="btn btn-apply-big font-md font-bold">Save All
+                                                    Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-50">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1 col-md-3 col-sm-12">
+                    <a href="index.html"><img alt="Dream Deal Group" class="foot-logo" src="assets/img/mob-logo.jpg" /></a>
+                    <div class="mt-20 mb-20 font-xs color-text-paragraph-2">
+                        "If you have a dream, join us and let's bring it to reality through Dream Deal—a platform where
+                        aspirations meet
+                        opportunity, and together, we turn dreams into savings."
+                    </div>
+                </div>
+                <div class="footer-col-2 col-md-2 col-xs-6">
+                    <h6 class="mb-20">Who we are</h6>
+                    <ul class="menu-footer">
+                        <li><a href="https://www.dreamdealgroup.in/" target="_blank">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="https://www.dreamdealgroup.in/gallery" target="_blank">Our Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3 col-md-2 col-xs-6">
+                    <h6 class="mb-20">Resources</h6>
+                    <ul class="menu-footer">
+                        <li><a href="schemes.html">Investment Plans</a></li>
+                        <li><a href="payment-details.html">payment Details</a></li>
+                        <li><a href="winners.html">Winners</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4 col-md-2 col-xs-6"></div>
+                <div class="footer-col-5 col-md-2 col-xs-6">
+                    <h6 class="mb-20">More</h6>
+                    <ul class="menu-footer">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="termsConditions.html">Terms & Conditions</a></li>
+                        <li><a href="faq.html">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-6 col-md-3 col-sm-12">
+                    <h6 class="mb-20">Contact US</h6>
+                    <ul class="menu-footer">
+                        <li><a href="tel:9148217256">(+91) 9148 217 256</a></li>
+                        <li><a href="mailto:dreamdealgroup2021@gmail.com">dreamdealgroup2021@gmail.com</a></li>
+                    </ul>
+                    <div class="footer-social mt-50">
+                        <a class="icon-socials icon-facebook" href="#"></a>
+                        <a class="icon-socials icon-instagram"
+                            href="https://www.instagram.com/dream.deal.group?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+                            target="_blank"></a>
+                        <a class="icon-socials icon-youtube" href="https://www.youtube.com/@DREAMDEALGROUP"
+                            target="_blank"></a>
+                        <a class="icon-socials icon-linkedin" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-20">
+                <div class="row">
+                    <div class="col-md-6"><span class="font-xs color-text-paragraph">Copyright &copy; 2024. Dream Deal
+                            Group all right reserved</span></div>
+                    <div class="col-md-6 text-md-end text-start">
+                        <div class="footer-social">
+                            <a class="font-xs color-text-paragraph" href="#">Privacy Policy</a>
+                            <a class="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp; Conditions</a>
+                            <a class="font-xs color-text-paragraph" target="_blank"
+                                href="https://www.dreamdealgroup.in/">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

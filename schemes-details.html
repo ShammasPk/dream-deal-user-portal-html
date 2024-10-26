@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="msapplication-TileColor" content="#0E0E0E" />
+        <meta name="template-color" content="#0E0E0E" />
+        <link rel="manifest" href="manifest.json" crossorigin />
+        <meta name="msapplication-config" content="browserconfig.xml" />
+        <meta name="description" content="Index page" />
+        <meta name="keywords" content="index, page" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpeg" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <title>Dashboard | Dream Deal Group</title>
+    </head>
+    <body>
+        <!-- loader -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="text-center"><img src="assets/img/loading.gif" alt="Dream Deal Group" /></div>
+                </div>
+            </div>
+        </div>
+        <header class="header sticky-bar">
+            <div class="container">
+                <div class="main-header">
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <a class="d-flex" href="dashboard.html">
+                                <img alt="Dream Deal Group" class="dreamdeal-logo" src="assets/img/logo.jpg" />
+                                <img alt="Dream Deal Group" class="dreamdeal-logo-mob" src="assets/img/mob-logo.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-main-menu">
+                            <ul class="main-menu">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a class="active" href="schemes.html">My Plans</a></li>
+                                <li><a href="payment-details.html">Payment Details</a></li>
+                                <li><a href="winners.html">Winners</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                            </ul>
+                        </nav>
+                        <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span
+                                class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="member-login">
+                            <img alt="" src="assets/img/user.png" />
+                            <div class="info-member">
+                                <strong class="color-brand-1">Shammas Sha</strong>
+                                <div class="dropdown">
+                                    <a class="font-xs color-text-paragraph-2 icon-down" id="dropdownProfile" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">User ID :
+                                        12345</a>
+                                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end"
+                                        aria-labelledby="dropdownProfile">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="reset-password.html">Reset Password</a></li>
+                                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+            <div class="mobile-header-wrapper-inner">
+                <div class="mobile-header-content-area">
+                    <div class="perfect-scroll">
+                        <div class="mobile-menu-wrap mobile-header-border">
+                            <!-- mobile menu start-->
+                            <nav>
+                                <ul class="mobile-menu font-heading">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="schemes.html">My Plans</a></li>
+                                    <li><a href="payment-details.html">Payment Details</a></li>
+                                    <li><a href="winners.html">Winners</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact US</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mobile-account">
+                            <h6 class="mb-10">Your Account</h6>
+                            <ul class="mobile-menu font-heading">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="profile.html">Account Settings</a></li>
+                                <li><a href="login.html">Logout Out</a></li>
+                            </ul>
+                        </div>
+                        <div class="site-copyright">Copyright 2024 &copy; Dream Deal Group.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ModalPayForm" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content apply-job-form">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body pl-30 pr-30 pt-50">
+                        <div class="text-center">
+                            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">Pay Now</h2>
+                            <p class="font-sm text-muted mb-30">Please choose your preferred payment method.</p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box-nav-tabs scheme-tab">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li><a class="active" href="#tab-qr" data-bs-toggle="tab" role="tab"
+                                                    aria-controls="tab-qr" aria-selected="true">Scan QR</a></li>
+                                            <li><a href="#tab-upi" data-bs-toggle="tab" role="tab" aria-controls="tab-upi"
+                                                    aria-selected="false">UPI Apps</a></li>
+                                            <li><a href="#tab-bank" data-bs-toggle="tab" role="tab" aria-controls="tab-bank"
+                                                    aria-selected="false">Bank Details</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-single">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="tab-qr" role="tabpanel"
+                                                aria-labelledby="tab-qr">
+                                                <h4>QR Details</h4>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-upi" role="tabpanel" aria-labelledby="tab-upi">
+                                                <h4>UPI Details</h4>
+                                            </div>
+                                            <div class="tab-pane fade" id="tab-bank" role="tabpanel" aria-labelledby="tab-bank">
+                                                <h4>Bank Details</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <section class="section-box-2 mt-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-sm-12">
+                            <div class="banner-hero banner-image-single mobnon">
+                                <img height="295px" class="mt-30" src="assets/img/scheme-details-banner.jpg"
+                                    alt="Dream Deal Group" /></div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mt-50">
+                            <div class="card-style-1 hover-up">
+                                <div class="card-image"> <img src="assets/img/content.svg" alt="jobBox"></div>
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <h3>₹1568.00</h3>
+                                    </div>
+                                    <p class="color-text-paragraph-2">Total Paid Amount</p>
+                                </div>
+                            </div>
+                            <div class="card-style-1 hover-up">
+                                <div class="card-image"> <img src="assets/img/management (1).svg" alt="jobBox"></div>
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <h3>₹1568.00</h3>
+                                    </div>
+                                    <p class="color-text-paragraph-2">Balance Amount</p>
+                                </div>
+                            </div>
+                            <div class="card-style-1 hover-up">
+                                <div class="card-image"> <img src="assets/img/research.svg" alt="jobBox"></div>
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <h3>15/46</h3>
+                                    </div>
+                                    <p class="color-text-paragraph-2">Scheme Status</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-10">
+                        <div class="col-lg-9 col-sm-12">
+                            <h3>Scheme name here</h3>
+                            <div class="mt-0 mb-15">
+                                <span class="card-briefcase">Joined by 10 Dec 2023</span>
+                                <span class="card-briefcase text-warning">Payment Pending</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 text-lg-end">
+                            <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up full-width" data-bs-toggle="modal" data-bs-target="#ModalPayForm">Pay now</div>
+                        </div>
+                    </div>
+                    <div class="border-bottom pt-10 pb-10"></div>
+                </div>
+            </section>
+            <section class="section-box mt-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="box-nav-tabs scheme-tab">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li><a class="active" href="#tab-about" data-bs-toggle="tab" role="tab" aria-controls="tab-about" aria-selected="true"><img src="assets/img/management.svg" alt="Dream Deal Group"> About Scheme</a></li>
+                                    <li><a href="#tab-prize" data-bs-toggle="tab" role="tab" aria-controls="tab-prize" aria-selected="false"><img src="assets/img/marketing.svg" alt="Dream Deal Group"> Prize Details</a></li>
+                                    <li><a href="#tab-winner" data-bs-toggle="tab" role="tab" aria-controls="tab-winner" aria-selected="false"><img src="assets/img/finance.svg" alt="Dream Deal Group"> Winners so Far</a></li>
+                                    <li><a href="#tab-payment" data-bs-toggle="tab" role="tab" aria-controls="tab-payment" aria-selected="false"><img src="assets/img/human.svg" alt="Dream Deal Group"> Payment Details</a></li>
+                                </ul>
+                            </div>
+                            <div class="content-single">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="tab-about" role="tabpanel" aria-labelledby="tab-about">
+                                        <h4>Scheme Details</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, qui? Velit aspernatur tempore placeat hic repellendus ipsum totam fugit animi repellat reprehenderit eos sit, distinctio
+                                            eveniet, optio quo vero ab.
+                                        </p>
+                                        <ul>
+                                            <li>Necessitatibus quibusdam facilis</li>
+                                            <li>Velit unde aliquam et voluptas reiciendis non sapiente labore</li>
+                                            <li>Commodi quae ipsum quas est itaque</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                                            <li>Deleniti asperiores blanditiis nihil quia officiis dolor</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-prize" role="tabpanel" aria-labelledby="tab-prize">
+                                        <h4>Monthly Draw Prizes</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae recusandae impedit omnis, temporibus eligendi sed dolorum.
+                                        </p>
+                                        <div class="row">
+                                            <!-- single winner grid -->
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card-grid-2 grid-bd-16 hover-up">
+                                                    <div class="card-grid-2-image">
+                                                        <div class="image-box">
+                                                            <figure><img src="https://placehold.co/250x200" alt="Dream Deal Group" /></figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block-info">
+                                                        <h5 class="mt-10 mb-0">5 pawan gold</h5>
+                                                        <div class="mt-5">
+                                                            <span class="card-location mr-15">1 Month Winner</span>
+                                                        </div>
+                                                        <p class="mt-10 prize-info">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, tenetur quia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single winner grid -->
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card-grid-2 grid-bd-16 hover-up">
+                                                    <div class="card-grid-2-image">
+                                                        <div class="image-box">
+                                                            <figure><img src="https://placehold.co/250x200" alt="Dream Deal Group" /></figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block-info">
+                                                        <h5 class="mt-10 mb-0">5 pawan gold</h5>
+                                                        <div class="mt-5">
+                                                            <span class="card-location mr-15">1 Month Winner</span>
+                                                        </div>
+                                                        <p class="mt-10 prize-info">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, tenetur quia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single winner grid -->
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card-grid-2 grid-bd-16 hover-up">
+                                                    <div class="card-grid-2-image">
+                                                        <div class="image-box">
+                                                            <figure><img src="https://placehold.co/250x200" alt="Dream Deal Group" /></figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block-info">
+                                                        <h5 class="mt-10 mb-0">5 pawan gold</h5>
+                                                        <div class="mt-5">
+                                                            <span class="card-location mr-15">1 Month Winner</span>
+                                                        </div>
+                                                        <p class="mt-10 prize-info">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, tenetur quia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-winner" role="tabpanel" aria-labelledby="tab-winner">
+                                        <h4>Winner Details</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae recusandae impedit omnis, temporibus eligendi sed dolorum.
+                                        </p>
+                                        <div class="row">
+                                            <!-- winner grid -->
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12 mb-md-30">
+                                                <div class="card-grid-4 text-center hover-up">
+                                                    <div class="image-top-feature">
+                                                        <figure><img alt="Dream Deal Group" src="assets/img/user.png" /></figure>
+                                                    </div>
+                                                    <div class="card-grid-4-info">
+                                                        <h6 class="mt-0 mb-0">Arlene McCoy</h6>
+                                                        <p class="font-xs color-text-paragraph-2 mt-5 mb-5">Winner tag name</p>
+                                                        <span class="card-location">Location Name</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- winner grid -->
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12 mb-md-30">
+                                                <div class="card-grid-4 text-center hover-up">
+                                                    <div class="image-top-feature">
+                                                        <figure><img alt="Dream Deal Group" src="assets/img/user.png" /></figure>
+                                                    </div>
+                                                    <div class="card-grid-4-info">
+                                                        <h6 class="mt-0 mb-0">Arlene McCoy</h6>
+                                                        <p class="font-xs color-text-paragraph-2 mt-5 mb-5">Winner tag name</p>
+                                                        <span class="card-location">Location Name</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- winner grid -->
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12 mb-md-30">
+                                                <div class="card-grid-4 text-center hover-up">
+                                                    <div class="image-top-feature">
+                                                        <figure><img alt="Dream Deal Group" src="assets/img/user.png" /></figure>
+                                                    </div>
+                                                    <div class="card-grid-4-info">
+                                                        <h6 class="mt-0 mb-0">Arlene McCoy</h6>
+                                                        <p class="font-xs color-text-paragraph-2 mt-5 mb-5">Winner tag name</p>
+                                                        <span class="card-location">Location Name</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- winner grid -->
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12 mb-md-30">
+                                                <div class="card-grid-4 text-center hover-up">
+                                                    <div class="image-top-feature">
+                                                        <figure><img alt="Dream Deal Group" src="assets/img/user.png" /></figure>
+                                                    </div>
+                                                    <div class="card-grid-4-info">
+                                                        <h6 class="mt-0 mb-0">Arlene McCoy</h6>
+                                                        <p class="font-xs color-text-paragraph-2 mt-5 mb-5">Winner tag name</p>
+                                                        <span class="card-location">Location Name</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-payment" role="tabpanel" aria-labelledby="tab-payment">
+                                        <h4>Payment Details</h4>
+                                        <div class="job-overview">
+                                            <div class="box-info-price"><span class="text-price color-brand-2">₹1900</span><span class="text-month">/month</span></div>
+                                            <div class="border-bottom mb-20">
+                                                <p class="text-desc-package font-sm color-text-paragraph">For most businesses that want to optimize web queries</p>
+                                            </div>
+                                            <div class="pg-details">
+                                                <div class="item processing">
+                                                    <span>Status</span><strong><span class="dot"></span>Processing</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Amount</span><strong>₹2600/-</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Date</span><strong>10 July 2024</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Description</span><strong>July Month installment.</strong>
+                                                </div>
+                                            </div>
+                                            <div class="pg-details">
+                                                <div class="item success">
+                                                    <span>Status</span><strong><span class="dot"></span>Successfull</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Amount</span><strong>₹2600/-</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Date</span><strong>12 May 2024</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Description</span><strong>May Month installment.</strong>
+                                                </div>
+                                            </div>
+                                            <div class="pg-details">
+                                                <div class="item success">
+                                                    <span>Status</span><strong><span class="dot"></span>Successfull</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Amount</span><strong>₹2600/-</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Date</span><strong>18 April 2024</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Description</span><strong>April Month installment.</strong>
+                                                </div>
+                                            </div>
+                                            <div class="pg-details">
+                                                <div class="item failed">
+                                                    <span>Status</span><strong><span class="dot"></span>Failed</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Amount</span><strong>₹2600/-</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Date</span><strong>10 March 2024</strong>
+                                                </div>
+                                                <div class="item">
+                                                    <span>Description</span><strong>March Month installment.</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 pl-40 pl-lg-15 mt-lg-30">
+                            <div class="sidebar-border">
+                                <div class="sidebar-heading">
+                                    <div class="avatar-sidebar">
+                                        <figure><img alt="Dream Deal Group" src="assets/img/user.png" /></figure>
+                                        <div class="sidebar-info">
+                                            <span class="sidebar-company">prometor name</span>
+                                            <span class="card-location">prometor ID</span> <br />
+                                            <span class="card-location">prometor ID</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-list-job">
+                                    <ul>
+                                        <li>
+                                            <div class="sidebar-icon-item"><i class="fi-rr-marker"></i></div>
+                                            <div class="sidebar-text-info">
+                                                <span class="text-description">Adrress</span>
+                                                <strong class="small-heading">Dream deal group Excel mall, 3rd floor KSR Road, Hampankatte., Mangalore</strong>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-icon-item"><i class="fi-rr-envelope"></i></div>
+                                            <div class="sidebar-text-info">
+                                                <span class="text-description">Email</span>
+                                                <strong class="small-heading">prometor@email.com</strong>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-icon-item"><i class="fi-rr-phone-call"></i></div>
+                                            <div class="sidebar-text-info">
+                                                <span class="text-description">Mob</span>
+                                                <strong class="small-heading">+91 9148 217 256</strong>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sidebar-icon-item"><i class="fi-rr-info"></i></div>
+                                            <div class="sidebar-text-info">
+                                                <span class="text-description">Other Details</span>
+                                                <strong class="small-heading">Dolorum iure quia sit hic cumque</strong>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-30"><a class="btn btn-send-message" href="#">Send Message</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer mt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1 col-md-3 col-sm-12">
+                        <a href="index.html"><img alt="Dream Deal Group" class="foot-logo" src="assets/img/mob-logo.jpg" /></a>
+                        <div class="mt-20 mb-20 font-xs color-text-paragraph-2">
+                            "If you have a dream, join us and let's bring it to reality through Dream Deal—a platform where
+                            aspirations meet
+                            opportunity, and together, we turn dreams into savings."
+                        </div>
+                    </div>
+                    <div class="footer-col-2 col-md-2 col-xs-6">
+                        <h6 class="mb-20">Who we are</h6>
+                        <ul class="menu-footer">
+                            <li><a href="https://www.dreamdealgroup.in/" target="_blank">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="https://www.dreamdealgroup.in/gallery" target="_blank">Our Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3 col-md-2 col-xs-6">
+                        <h6 class="mb-20">Resources</h6>
+                        <ul class="menu-footer">
+                            <li><a href="schemes.html">Investment Plans</a></li>
+                            <li><a href="payment-details.html">payment Details</a></li>
+                            <li><a href="winners.html">Winners</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4 col-md-2 col-xs-6"></div>
+                    <div class="footer-col-5 col-md-2 col-xs-6">
+                        <h6 class="mb-20">More</h6>
+                        <ul class="menu-footer">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="termsConditions.html">Terms & Conditions</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-6 col-md-3 col-sm-12">
+                        <h6 class="mb-20">Contact US</h6>
+                        <ul class="menu-footer">
+                            <li><a href="tel:9148217256">(+91) 9148 217 256</a></li>
+                            <li><a href="mailto:dreamdealgroup2021@gmail.com">dreamdealgroup2021@gmail.com</a></li>
+                        </ul>
+                        <div class="footer-social mt-50">
+                            <a class="icon-socials icon-facebook" href="#"></a>
+                            <a class="icon-socials icon-instagram"
+                                href="https://www.instagram.com/dream.deal.group?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+                                target="_blank"></a>
+                            <a class="icon-socials icon-youtube" href="https://www.youtube.com/@DREAMDEALGROUP"
+                                target="_blank"></a>
+                            <a class="icon-socials icon-linkedin" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom mt-20">
+                    <div class="row">
+                        <div class="col-md-6"><span class="font-xs color-text-paragraph">Copyright &copy; 2024. Dream Deal
+                                Group all right reserved</span></div>
+                        <div class="col-md-6 text-md-end text-start">
+                            <div class="footer-social">
+                                <a class="font-xs color-text-paragraph" href="#">Privacy Policy</a>
+                                <a class="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp; Conditions</a>
+                                <a class="font-xs color-text-paragraph" target="_blank"
+                                    href="https://www.dreamdealgroup.in/">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/counterup.js"></script>
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
